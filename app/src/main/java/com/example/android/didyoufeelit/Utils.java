@@ -43,6 +43,9 @@ public final class Utils {
     /**
      * Query the USGS dataset and return an {@link Event} object to represent a single earthquake.
      */
+    /**
+     * Query the USGS dataset and return an {@link Event} object to represent a single earthquake.
+     */
     public static Event fetchEarthquakeData(String requestUrl) {
         // Create URL object
         URL url = createUrl(requestUrl);
@@ -61,7 +64,6 @@ public final class Utils {
         // Return the {@link Event}
         return earthquake;
     }
-
     /**
      * Returns new URL object from the given string URL.
      */
